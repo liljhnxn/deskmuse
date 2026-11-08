@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #121419;
+  --foreground: #F5F5F5;
+}
+
+body {
+  background-color: #121419;
+  color: #F5F5F5;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  selection-background-color: #E0A458;
+  selection-color: #121419;
+}
+
+::selection {
+  background-color: #E0A458;
+  color: #121419;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121419;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262e3b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E0A458;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(32, 38, 48, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(224, 164, 88, 0.12);
+}
+
+.glass-nav {
+  background: rgba(18, 20, 25, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glow-accent {
+  box-shadow: 0 0 30px rgba(224, 164, 88, 0.18);
+}
+
+.glow-accent-hover:hover {
+  box-shadow: 0 0 35px rgba(224, 164, 88, 0.32);
+}
+
+/* Subtle dot mesh background */
+.bg-mesh {
+  background-image: radial-gradient(rgba(224, 164, 88, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
